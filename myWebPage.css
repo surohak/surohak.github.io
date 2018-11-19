@@ -174,4 +174,8 @@ body{
 }
 .namesSkills{
 	float: left;
+	font-size: 30px;
+}
+.procent{
+	float: right;
 }
