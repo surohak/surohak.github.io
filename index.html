@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>Suren Hakobyan</title>
+    <link rel="shortcut icon" href="myLogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="reset.css">
-    <link href="myWebPage.css" rel="stylesheet">
+    <link rel="stylesheet" href="myWebPage.css">
 </head>
 <body>
 
@@ -13,7 +14,7 @@
       <div class="nav-wrapper">
         <a href="#menu" class="brand-logo"><img src="myLogo.png"></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#about" type="button" class="button">About Me</a></li>
+          <li><a href="#aboutme" type="button" class="button">About Me</a></li>
           <li><a href="#exp" type="button" class="button">Skills & Experience</a></li>
           <li><a href="#portfolio" type="button" class="button">Portfolio</a></li>
           <li><a href="#" type="button" class="button" id="contact">Contact Me</a></li>
@@ -39,10 +40,10 @@
       <div class="parallax" ><img src="IMG_1039.png"></div>
     </div>
 
-    <div class="section black" id="about">
+    <div class="section black" id="aboutme">
       <div class="row container">
-        <h2 class="white-text text-darken-3 lighten-3""> About Me </h2>
-        <p class="white-text text-darken-3 lighten-3">Hello I am Suren, I was born in 1996. I studied and graduated from high school.Then I started studying at Yerevan State University, faculty of computer science and applied mathematics. Together with the university I studied at the Armenian Code Academy.</p>
+        <h2 class="white-text text-darken-3 lighten-3"">About Me </h2>
+        <p class="white-text text-darken-3 lighten-3" id="about"></p>
       </div>
   	</div>
 
@@ -70,49 +71,16 @@
             <div class="item" id="item3"></div>
           </div>
       </div>
-      <div class="parallax"><img src="Img_2.png"></div>
+      <div class="parallax"><img src="Img_2.png" ></div>
     </div>  
-
-	<div class="section black" id="portfolio">
-      <div class="row container">
-        <h2 class="header">Portfolio</h2><br>
-        <div class="imgSlide">
-        	<div class="slideshow-container">
-
-				<div class="mySlides fade">
-				  <div class="numbertext">1 / 2</div>
-				  <img src="collage.png" style="width:100%">
-				  <div class="text">Color Picker & To Do List</div>
-				</div>
-
-				<div class="mySlides fade">
-				  <div class="numbertext">2 / 2</div>
-				  <img src="collage1.png" style="width:100%">
-				  <div class="text">Calculator & Memory Game Colors</div>
-				</div>
-
-				</div>
-				<br>
-
-				<div style="text-align:center">
-				  <span class="dot"></span> 
-				  <span class="dot"></span> 
-				</div>
-
-        </div>
       
-      </div>
   </div>
-	<div class="parallax-container">
-      <div class="parallax"><img src="Img_3.png"></div>
+	<div class="parallax-container" >
+      <div class="parallax" " ><img src="Img_3.png" id="img"></div>
+      	<div class="portfolio"></div>
+      	<div class="contact"></div>
     </div>
- <div class="section ">
-      <div class="row container">
-        <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-      </div>
-  </div>
-
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="myWebPage.js"></script>
 </body>
