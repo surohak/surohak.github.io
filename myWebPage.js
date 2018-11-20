@@ -14,38 +14,40 @@ function myFunction() {
 }
 
 
+
+
 var i = 0;
 var txt = 'Hello I am Suren, I was born in 1996. I studied and graduated from high school.Then I started studying at Yerevan State University, faculty of computer science and applied mathematics. Together with the university I studied at the Armenian Code Academy.';
-var speed = 50;
+var speedTypeWriter = 50;
 typeWriter();
 
 function typeWriter() {
   if (i < txt.length){
     document.getElementById("about").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriter, speedTypeWriter);
   }
 }
 
 
 
-// var slideIndex = 0;
-// showSlides();
+var slideIndex = 0;
+showSlides();
 
-// function showSlides() {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides");
-//     var dots = document.getElementsByClassName("dot");
-//     for (i = 0; i < slides.length; i++) {
-//        slides[i].style.display = "none";  
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}    
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex-1].style.display = "block";  
-//     dots[slideIndex-1].className += " active";
-//     setTimeout(showSlides, 3000); // Change image every 3 seconds
-// }
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
 
