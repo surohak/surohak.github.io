@@ -12,47 +12,40 @@ function myFunction() {
         document.getElementById("line").className = "slideDown";
     }
 }
- 
-var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-    V = 1;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
-for (var i = 0; i < linkNav.length; i++) {
-    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
-        e.preventDefault(); //отменяем стандартное поведение
-        var w = window.pageYOffset,  // производим прокрутка прокрутка
-            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
-        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
-            start = null;
-        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
-        function step(time) {
-            if (start === null) start = time;
-            var progress = time - start,
-                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-            window.scrollTo(0,r - 200);
-            if (r != w + t) {
-                requestAnimationFrame(step)
-            } else {
-                location.hash = hash  // URL с хэшем
-            }
-        }
-    }, false);
+
+
+var i = 0;
+var txt = 'Hello I am Suren, I was born in 1996. I studied and graduated from high school.Then I started studying at Yerevan State University, faculty of computer science and applied mathematics. Together with the university I studied at the Armenian Code Academy.';
+var speed = 50;
+typeWriter();
+
+function typeWriter() {
+  if (i < txt.length){
+    document.getElementById("about").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
 
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
+
+// var slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//     var i;
+//     var slides = document.getElementsByClassName("mySlides");
+//     var dots = document.getElementsByClassName("dot");
+//     for (i = 0; i < slides.length; i++) {
+//        slides[i].style.display = "none";  
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) {slideIndex = 1}    
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     slides[slideIndex-1].style.display = "block";  
+//     dots[slideIndex-1].className += " active";
+//     setTimeout(showSlides, 3000); // Change image every 3 seconds
+// }
+
