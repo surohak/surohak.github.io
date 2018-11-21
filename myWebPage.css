@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+* {
+  box-sizing: border-box;
+}
+
 html{
 	scroll-behavior: smooth;
 }
@@ -60,23 +64,60 @@ body{
     margin:  120px;
 }
 .name{
+	cursor: context-menu;
     font-size: 100px;
     color: #00D646;
     font-family: 'Oswald', sans-serif;
 }
 .firstChar{
+	cursor: context-menu;
     font-size: 120px;
     color: #004717;
 }
+
 #profession{
+	cursor: context-menu;
     font-size: 50px;
     color: #fff;
     font-family: 'Dancing Script', cursive;
 }
+#profession{
+	text-align: center;
+   	overflow: hidden;
+   	animation-name: apperance;
+   	animation-duration: 7s;
+}
+.name{
+	text-align: center;
+	overflow: hidden;
+   	animation-name: apperance;
+   	animation-duration: 7s;
+}
+.firstChar{
+	text-align: center;
+	overflow: hidden;
+   	animation-name: apperance;
+   	animation-duration: 7s;
+}
+
+@keyframes apperance {
+     0% { transform: rotate(0deg) scale(3.0,3.0) ; opacity: 0;  }
+}
+
+#profession {
+   overflow: hidden;
+   text-shadow: 0px 30px 0px transparent;
+   transition: all 300ms linear 0ms;
+}
+#profession:hover {
+   text-shadow: 2px 2px 2px #4F4F4F;
+   transition: text-shadow 300ms linear 0ms;
+}
 .skills{
-    width: 50%;
-    padding: 100px;
-    margin:  100px;
+	margin-top: 5%;
+	margin-left: 5%;
+    width: 50vw;
+    padding: 10px;
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
     float: left;
@@ -174,7 +215,7 @@ body{
 .experience{
 	float: right;
 	font-size: 50px;
-	width: 34%;
+	width: 34vw;
 	color: #ffffff;
     font-family: 'Oswald', sans-serif;
     padding-top: 5%;
@@ -220,19 +261,22 @@ body{
 	opacity: 0.8;
 	float: left;
 	background-color: black;
-	width: 600px;
-	height: 700px;
-	margin: 7%;
+	width: 40vw;
+	height: 100vh;
+	margin-left: 10vw;
+	margin-top: 10vh;
 }
 .contact{
 	opacity: 0.8;
 	float: right;
 	background-color: black;
-	width: 600px;
-	height: 700px;
-	margin: 7%;
+	width: 40vw;
+	height: 100vh;
+	margin-right: 10vw;
+	margin-top: 10vh;
 }
 .por{
+	cursor: context-menu;
 	color: white;
 	text-align:center;
 	font-size: 50px;
@@ -322,7 +366,7 @@ input,#message 	{
 	color: white;
 }
 .btn{
-	width: 200px;
+	margin-right: 10%;
 	color: black;
 	background-color: white;
 }
@@ -337,8 +381,6 @@ input,#message 	{
     The size of the images will adapt automatically.
     Make sure that the width is 5 times the height
     for better results.*/
-    width: 600px;
-    height: 128px;
     position: relative;
 }
 
@@ -446,3 +488,7 @@ input,#message 	{
     width: 20%;
     opacity: 1;
 }
+
+
+
+
