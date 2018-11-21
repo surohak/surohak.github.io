@@ -11,7 +11,7 @@ html{
 background-image:url('');
 background-repeat:no-repeat;
 width:5px;
-height:0px
+height:0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,7 +33,7 @@ background-color:#56999f;
 background-image:url('');
 background-repeat:no-repeat;
 width:4px;
-height:0px
+height:0px;
 }
 
 ::-webkit-scrollbar{
@@ -53,31 +53,32 @@ body{
 }
 .parallax-container {
       height: 100%;
-
+}
+.backImg{
+	width: 100%;
+    height: auto;
 }
 .myName{
-    width: 50%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    padding: 120px;
-    margin:  120px;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 20%;
+    margin-left: 10%;
 }
 .name{
 	cursor: context-menu;
-    font-size: 100px;
+    font-size: 7vw;
     color: #00D646;
     font-family: 'Oswald', sans-serif;
 }
 .firstChar{
 	cursor: context-menu;
-    font-size: 120px;
+    font-size: 10vw;
     color: #004717;
 }
 
 #profession{
 	cursor: context-menu;
-    font-size: 50px;
+    font-size: 5vw;
     color: #fff;
     font-family: 'Dancing Script', cursive;
 }
@@ -114,6 +115,9 @@ body{
    transition: text-shadow 300ms linear 0ms;
 }
 .skills{
+	cursor: context-menu;
+	opacity: 0.8;
+	background-color: black;
 	margin-top: 5%;
 	margin-left: 5%;
     width: 50vw;
@@ -123,7 +127,10 @@ body{
     float: left;
 }
 .skill{
-    font-size: 100px;
+    font-size: 10vw;;
+}
+.olevel{
+	font-size: 7vmin;
 }
 #one{
 	border-top:12px solid rgba(0, 214, 70, 1);
@@ -149,7 +156,7 @@ body{
     animation-name: slideUp1;
     animation-duration: 5s;
     visibility: visible;
-    width: 450px;
+    width: 30vw;
 }
 
 @keyframes slideUp1 {
@@ -157,14 +164,14 @@ body{
         width: 0px;
     } 
     to {
-        width: 450px;
+        width: 30vw;
     }
 }
 .slideUp2 {
     animation-name: slideUp2;
     animation-duration: 6s;
     visibility: visible;
-    width: 400px;
+    width: 25vw;
 }
 
 @keyframes slideUp2 {
@@ -172,14 +179,14 @@ body{
         width: 0px;
     } 
     to {
-        width: 400px;
+        width: 25vw;
     }
 }
 .slideUp3 {
     animation-name: slideUp3;
     animation-duration: 7s;
     visibility: visible;
-    width: 350px;
+    width: 20vw;
 }
 
 @keyframes slideUp3 {
@@ -187,14 +194,14 @@ body{
         width: 0px;
     } 
     to {
-        width: 350px;
+        width: 20vw;
     }
 }
 .slideUp4 {
     animation-name: slideUp4;
     animation-duration: 3s;
     visibility: visible;
-    width: 50px;
+    width: 5vw;
 }
 
 @keyframes slideUp4 {
@@ -202,7 +209,7 @@ body{
         width: 0px;
     } 
     to {
-        width: 50px;
+        width: 5vw;
     }
 }
 .section{
@@ -213,20 +220,27 @@ body{
 	font-family: 'Oswald', sans-serif;
 }
 .experience{
+	background-color: black;
+	opacity: 0.7;
+	cursor: context-menu;
 	float: right;
-	font-size: 50px;
-	width: 34vw;
+	width: 40vw;
+	opacity: 0.8;
+	text-align: center;
+	font-size: 8vw;
 	color: #ffffff;
+	margin-top: 5%;
+	margin-right: 5%;
     font-family: 'Oswald', sans-serif;
-    padding-top: 5%;
+    height: 75%;
 }
 .slideDown{
 	animation-name: slideDown;
     animation-duration: 7s;
     visibility: visible;
     height: 450px;
+    margin-left: 50%;
     border-left: 5px solid rgba(0, 214, 70, 1);
-    margin: 100px;
 }
 @keyframes slideDown{
     from {
@@ -251,7 +265,7 @@ body{
 }
 .namesSkills{
 	float: left;
-	font-size: 30px;
+	font-size: 3vh ;
 }
 .procent{
 	float: right;
@@ -262,28 +276,29 @@ body{
 	float: left;
 	background-color: black;
 	width: 40vw;
-	height: 100vh;
 	margin-left: 10vw;
-	margin-top: 10vh;
+	margin-top: 4%;
 }
 .contact{
 	opacity: 0.8;
 	float: right;
 	background-color: black;
 	width: 40vw;
-	height: 100vh;
+	height: 80%;
 	margin-right: 10vw;
-	margin-top: 10vh;
+	margin-top: 3%;
 }
 .por{
 	cursor: context-menu;
 	color: white;
 	text-align:center;
-	font-size: 50px;
+	font-size: 3vw;
     font-family: 'Oswald', sans-serif;
 }
 
-.mySlides {display: none;}
+.mySlides {
+	display: none;
+}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -296,7 +311,7 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 20px;
+  font-size: 2vh;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -308,7 +323,7 @@ img {vertical-align: middle;}
 /* Number text (1/5 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 18px;
+  font-size: 1.8vh;
   padding: 8px 12px;
   position: absolute;
   top: 99%;
@@ -354,7 +369,7 @@ img {vertical-align: middle;}
 .con{
 	color: white;
 	text-align:center;
-	font-size: 35px;
+	font-size: 2vw;
     font-family: 'Oswald', sans-serif;
     transition: 0.5s;
     cursor: pointer;
@@ -488,6 +503,7 @@ input,#message 	{
     width: 20%;
     opacity: 1;
 }
+
 
 
 
