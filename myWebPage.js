@@ -2,14 +2,25 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.parallax');
     var instances = M.Parallax.init(elems, );
   });
+
 document.onscroll = function() {myFunction()};
 function myFunction() {
+
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        document.getElementById("one").className = "slideUp1";
-        document.getElementById("two").className = "slideUp2";
-        document.getElementById("tree").className = "slideUp3";
-        document.getElementById("four").className = "slideUp4";
-        document.getElementById("line").className = "slideDown";
+    	document.getElementById("exp").className = "experience";
+        document.getElementById("skill").className = "skills";
+        setTimeout(function(){
+	        document.getElementById("one").className = "slideUp1";
+	        document.getElementById("two").className = "slideUp2";
+	        document.getElementById("tree").className = "slideUp3";
+	        document.getElementById("four").className = "slideUp4";
+	        document.getElementById("line").className = "slideDown";
+
+    	},1000)
+    }
+    if(document.body.scrollTop > 900 || document.documentElement.scrollTop > 900){
+   	    document.getElementById("port").className = "portfolio";
+   	    document.getElementById("con").className = "contact";
     }
 }
 
@@ -23,7 +34,7 @@ typeWriter();
 
 function typeWriter() {
   if (i < txt.length){
-    document.getElementById("about").innerHTML += txt.charAt(i);
+    document.getElementById("about").textContent += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speedTypeWriter);
   }
@@ -50,4 +61,5 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
 
