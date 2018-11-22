@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.onscroll = function() {myFunction()};
 function myFunction() {
 
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     	document.getElementById("exp").className = "experience";
         document.getElementById("skill").className = "skills";
         setTimeout(function(){
