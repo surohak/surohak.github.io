@@ -52,6 +52,11 @@ width: 10px;
 .parallax-container {
       height: 100%;
 }
+@media only screen and (max-width: 600px) {
+    .parallax-container {
+        height: 80vh;
+    }
+}	
 .backImg{
 	width: 100%;
     height: auto;
@@ -112,6 +117,12 @@ width: 10px;
    text-shadow: 2px 2px 2px #4F4F4F;
    transition: text-shadow 300ms linear 0ms;
 }
+#abm{
+	font-size: 5vh;
+}
+#about{
+	font-size: 3vh;
+}
 .skills{
 	cursor: context-menu;
 	opacity: 0.8;
@@ -124,11 +135,27 @@ width: 10px;
     font-family: 'Oswald', sans-serif;
     float: left;
 }
+.skills{
+   	animation-name: skapp;
+   	animation-duration: 5s;
+}
+
+@keyframes skapp {
+   0% { opacity: 0; transform: translate(0px,-1000px) rotate(0deg) ;  }
+   50% { opacity: 1;  }
+   60% { transform: translate(0px,30px) rotate(0deg) ;  }
+   80% { transform: translate(0px,-10px) rotate(0deg) ;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ;  }
+}
+
 .skill{
-    font-size: 7vw;;
+	visibility: hidden;
+}
+.nameSk{
+	font-size: 5vw;
 }
 .olevel{
-	font-size: 5vmin;
+	font-size: 3vw;
 }
 #one{
 	border-top:12px solid rgba(0, 214, 70, 1);
@@ -218,34 +245,41 @@ width: 10px;
 	font-family: 'Oswald', sans-serif;
 }
 .experience{
+	animation-name: skapp;
+   	animation-duration: 5s;
 	background-color: black;
 	opacity: 0.7;
 	cursor: context-menu;
 	float: right;
-	width: 40vw;
+	width: 25vw;
 	opacity: 0.8;
 	text-align: center;
-	font-size: 7vw;
+	font-size: 3vw;
 	color: #ffffff;
-	margin-top: 3%;
+	margin-top: 5%;
 	margin-right: 5%;
     font-family: 'Oswald', sans-serif;
-    height: 90%;
+    height: 82vh;
 }
+
+#line{
+	margin-left: 50%;
+}
+
 .slideDown{
 	animation-name: slideDown;
     animation-duration: 7s;
     visibility: visible;
-    height: 450px;
+    height: 71vh;
     margin-left: 50%;
     border-left: 5px solid rgba(0, 214, 70, 1);
 }
 @keyframes slideDown{
     from {
-        height:  0px;
+        height:  0;
     } 
     to {
-        height:  450px;
+        height:  71vh;
     }
 }
 .item{
@@ -256,10 +290,10 @@ width: 10px;
 	background-color: rgba(0, 214, 70, 1);
 }
 #item1{
-	margin-bottom: 420px;
+	margin-bottom: 67vh;
 }
 #item2{
-	margin-bottom: -240px;
+	margin-bottom: -39vh;
 }
 .namesSkills{
 	float: left;
@@ -270,6 +304,8 @@ width: 10px;
 }
 
 .portfolio{
+	animation: portapp;
+	animation-duration: 5s;
 	opacity: 0.8;
 	float: left;
 	background-color: black;
@@ -277,7 +313,16 @@ width: 10px;
 	margin-left: 10vw;
 	margin-top: 3%;
 }
+@keyframes portapp {
+   0% { opacity: 0; transform: translate(-1000px,0px) rotate(0deg) ;  }
+   50% { opacity: 1;  }
+   60% { transform: translate(30px,0px) rotate(0deg) ;  }
+   80% { transform: translate(-10px,0px) rotate(0deg) ;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ;  }
+}
 .contact{
+	animation: conapp;
+	animation-duration: 5s;
 	opacity: 0.8;
 	float: right;
 	background-color: black;
@@ -285,6 +330,13 @@ width: 10px;
 	height: 90%;
 	margin-right: 10vw;
 	margin-top: 3%;
+}
+@keyframes conapp {
+   0% { opacity: 0; transform: translate(1000px,0px) rotate(0deg) ;  }
+   50% { opacity: 1;  }
+   60% { transform: translate(-30px,0px) rotate(0deg) ;  }
+   80% { transform: translate(10px,0px) rotate(0deg) ;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ;  }
 }
 .por{
 	cursor: context-menu;
