@@ -57,6 +57,10 @@ width: 10px;
         height: 80vh;
     }
 }	
+.fon{
+    width: 100%;
+    height: auto;
+}
 .backImg{
 	width: 100%;
     height: auto;
@@ -553,8 +557,3 @@ input,#message 	{
     width: 20%;
     opacity: 1;
 }
-
-
-
-
-
