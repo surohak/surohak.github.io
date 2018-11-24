@@ -18,7 +18,7 @@ function myFunction() {
 
     	},1000)
     }
-    if(document.body.scrollTop > 900 || document.documentElement.scrollTop > 900){
+    if(document.body.scrollTop > 800 || document.documentElement.scrollTop > 800){
    	    document.getElementById("port").className = "portfolio";
    	    document.getElementById("con").className = "contact";
     }
