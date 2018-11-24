@@ -315,7 +315,10 @@ width: 10px;
 	background-color: black;
 	width: 35vw;
 	margin-left: 10vw;
-	margin-top: 3%;
+    margin-top: 3%;
+}
+.port{
+    visibility: hidden;
 }
 @keyframes portapp {
    0% { opacity: 0; transform: translate(-1000px,0px) rotate(0deg) ;  }
