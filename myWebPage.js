@@ -28,7 +28,7 @@ function myFunction() {
 
 
 var i = 0;
-var txt = 'Hello I am Suren, I was born in 1996. I studied and graduated from high school.Then I started studying at Yerevan State University, faculty of computer science and applied mathematics. Together with the university I studied at the Armenian Code Academy.';
+var txt = 'Hello I am Junior Front End Developer Suren, I was born in 1996. I studied and graduated from high school.Then I started studying at Yerevan State University, faculty of computer science and applied mathematics. Together with the university I studied at the Armenian Code Academy.';
 var speedTypeWriter = 50;
 typeWriter();
 
