@@ -562,3 +562,10 @@ input,#message 	{
     width: 20%;
     opacity: 1;
 }
+.dl{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.dl:hover{
+    transform: scale(1.33)
+}
