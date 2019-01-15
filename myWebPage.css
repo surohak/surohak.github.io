@@ -231,7 +231,7 @@ width: 10px;
 }
 .slideUp4 {
     animation-name: slideUp4;
-    animation-duration: 3s;
+    animation-duration: 8s;
     visibility: visible;
     width: 15vw;
 }
