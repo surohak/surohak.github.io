@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#61dafb"/>
+  
+  <!-- React-style orbits -->
+  <ellipse cx="256" cy="256" rx="220" ry="75" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3" transform="rotate(0,256,256)"/>
+  <ellipse cx="256" cy="256" rx="220" ry="75" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3" transform="rotate(60,256,256)"/>
+  <ellipse cx="256" cy="256" rx="220" ry="75" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3" transform="rotate(120,256,256)"/>
+  
+  <!-- Initials -->
+  <text x="256" y="305" font-family="Arial, sans-serif" font-size="200" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">SH</text>
+</svg> 
