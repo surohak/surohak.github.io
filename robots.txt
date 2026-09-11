@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow: /static/
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://surhak.vercel.app/sitemap.xml
